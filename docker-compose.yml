@@ -5,6 +5,7 @@ services:
     stdin_open: true     # giữ terminal mở
     tty: true            # cho phép dùng bash
     command: bash
+    privileged: true     # cần để set hugepages
 
     volumes:
       - ./data:/workspace   # thư mục chia sẻ
